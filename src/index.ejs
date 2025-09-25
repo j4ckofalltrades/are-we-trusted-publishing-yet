@@ -7,11 +7,17 @@
     <% if (content.header) { %>
     <header class="page-header">
       <% if (!utilities.isWrappedInParagraphTags(content.header)) { %>
-      <p>
+      <h1>
         <% } %> <%- content.header %> <% if (!utilities.isWrappedInParagraphTags(content.header)) {
         %>
-      </p>
+      </h1>
 
+        <p>
+            <a href="https://repos.openssf.org/trusted-publishers-for-all-package-repositories" target="_blank">Trusted Publishing</a> is a recommended security capability by the OpenSSF Securing Software Repositories Working Group
+            as it removes the need to securely manage an API token in the build system.
+        </p>
+
+        <p>This timeline lists which package registries support it and when it was added.</p>
       <p><% } %></p>
     </header>
 
@@ -27,7 +33,7 @@
             <% content.filters.forEach(function(filter){ %>
             <li>
               <input type="checkbox" name="filter" id="<%= filter %>" checked />
-              <label for="<%= filter %>"><%- utilities.sentenceCase(filter) %> </label>
+              <label for="<%= filter %>"><%- filter %> </label>
             </li>
             <% }); %>
           </ul>
