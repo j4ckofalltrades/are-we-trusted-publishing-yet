@@ -127,7 +127,7 @@ const entries = [
     categories: ['PyPI'],
     color: 'green',
     faicon: 'plus',
-    date: '2024-03-01',
+    date: '2024-04-17',
     title: 'PyPI expands Trusted Publisher Support',
     body: `
     <article>
