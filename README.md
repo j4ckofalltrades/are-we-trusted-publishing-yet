@@ -17,4 +17,4 @@ As of this writing, the following package registries support Trusted Publishing:
 
 ## Contributing
 
-Did I get something wrong, or you found something missing? Let me know by opening an issue.
+Find something missing? Let me know by opening an [issue](https://github.com/j4ckofalltrades/are-we-trusted-publishing-yet/issues/).

@@ -10,14 +10,14 @@ const entries = [
     title: 'pub.dev adds support for Trusted Publishing',
     body: `
     <article>
-    Blog post excerpt:
+    Excerpt:
     <blockquote>
-    Thousands of Dart community members publish packages on pub.dev, for the benefit of all Dart and Flutter developers. Traditionally, these package publishers have published to pub.dev by running a local terminal command, <code>dart pub publish</code>, and authenticating with their Google account. Behind the scenes a <i>refresh token</i> was stored in a configuration file on their development machine, which enabled them to publish a new version without authenticating again. This flow is simple and easy to understand, but requires a number of manual steps. We’re happy to introduce a new automated publishing flow, that enables publishing new pub.dev versions directly from a GitHub Action. This has several benefits:
+    &quot;Thousands of Dart community members publish packages on pub.dev, for the benefit of all Dart and Flutter developers. Traditionally, these package publishers have published to pub.dev by running a local terminal command, <code>dart pub publish</code>, and authenticating with their Google account. Behind the scenes a <i>refresh token</i> was stored in a configuration file on their development machine, which enabled them to publish a new version without authenticating again. This flow is simple and easy to understand, but requires a number of manual steps. We’re happy to introduce a new automated publishing flow, that enables publishing new pub.dev versions directly from a GitHub Action. This has several benefits:
 
     <ul>
     <li>Each release is automatically tagged with consistent release tags in GitHub</li>
     <li>It’s easy to configure a review and approval flow for publishing new versions.</li>
-    <li>The publishing process is authenticated by a token signed by GitHub, ensuring no credentials have to be stored on disk.</li>
+    <li>The publishing process is authenticated by a token signed by GitHub, ensuring no credentials have to be stored on disk.&quot;</li>
     </ul>
     </blockquote>
     </article>
@@ -42,10 +42,10 @@ const entries = [
     title: 'PyPI adds support for Trusted Publishing',
     body: `
     <article>
-    Blog post excerpt:
+    Excerpt:
     <blockquote>
-    "Trusted publishing" is our term for using the OpenID Connect (OIDC) standard to exchange short-lived identity tokens between a trusted third-party service and PyPI.
-    This method can be used in automated environments and eliminates the need to use username/password combinations or manually generated API tokens to authenticate with PyPI when publishing.
+    &quot;Trusted publishing is our term for using the OpenID Connect (OIDC) standard to exchange short-lived identity tokens between a trusted third-party service and PyPI.
+    This method can be used in automated environments and eliminates the need to use username/password combinations or manually generated API tokens to authenticate with PyPI when publishing.&quot;
     </blockquote>
     </article>
     `,
@@ -69,13 +69,11 @@ const entries = [
     title: 'RubyGems adds support for Trusted Publishing',
     body: `
     <article>
-    Blog post excerpt:
+    Excerpt:
     <blockquote>
-    Enter the subject of today’s announcement: Trusted Publishing. Before getting into the details, I’d like to quickly thank our friends over at PyPI for blazing this trail, providing helpful guidance, and writing some pretty great docs.
+    &quot;Enter the subject of today’s announcement: Trusted Publishing. Before getting into the details, I’d like to quickly thank our friends over at PyPI for blazing this trail, providing helpful guidance, and writing some pretty great docs.
     <p></p>
-    Trusted Publishing is a term for using OpenID Connect (OIDC) to exchange short-lived identity tokens between a trusted third-party service and RubyGems.org. This allows obtaining short-lived API tokens in an automated environment (such as CI) without having to store long-lived API tokens or username/password credentials.
-    <p></p>
-    After filling out four form fields for your gem (repo owner, repo name, GitHub Actions workflow file name, and optional GitHub Environment), you’ll be able to automate publishing via GitHub Actions with a short, simple, and copy/pastable workflow.
+    Trusted Publishing is a term for using OpenID Connect (OIDC) to exchange short-lived identity tokens between a trusted third-party service and RubyGems.org. This allows obtaining short-lived API tokens in an automated environment (such as CI) without having to store long-lived API tokens or username/password credentials.&quot;
     </blockquote>
     </article>
     `,
@@ -99,16 +97,13 @@ const entries = [
     title: 'JSR (the JavaScript Registry) adds support for Trusted Publishing',
     body:
     `
-    Blog post excerpt:
+    Excerpt:
     <blockquote>
-    <b>Publishing from GitHub</b>
-    <p></p>
-    While publishing from the command line is all well and good for trying things out, you’re probably going to want to publish your package from CI. The easiest way to set that up on JSR is linking a GitHub repository.
-    In the JSR package <code>Settings</code> UI, configure a GitHub username and repository name where your package source code is stored.
+    &quot;While publishing from the command line is all well and good for trying things out, you’re probably going to want to publish your package from CI. The easiest way to set that up on JSR is linking a GitHub repository.
     <p></p>
     ...
     <p></p>
-    Publishing this way also gives your users peace of mind that the artifact they’re including in their project was indeed uploaded from CI, with a <a href="https://www.sigstore.dev/how-it-works" target="_blank">provenance transparency log</a>  available for viewing.
+    Publishing this way also gives your users peace of mind that the artifact they’re including in their project was indeed uploaded from CI, with a <a href="https://www.sigstore.dev/how-it-works" target="_blank">provenance transparency log</a> available for viewing.&quot;
     </blockquote>
     `,
     links: [
@@ -131,13 +126,13 @@ const entries = [
     title: 'PyPI expands Trusted Publisher Support',
     body: `
     <article>
-    Blog post excerpt:
+    Excerpt:
     <blockquote>
-    <p>PyPI package maintainers can publish via Trusted Publishing from three additional providers (in addition to GitHub Actions):</p>
+    <p>&quot;PyPI package maintainers can publish via Trusted Publishing from three additional providers (in addition to GitHub Actions):</p>
     <ul>
     <li>GitLab CI/CD</li>
     <li>Google Cloud</li>
-    <li>ActiveState</li>
+    <li>ActiveState&quot;</li>
     </ul>
     </blockquote>
     `,
@@ -158,11 +153,11 @@ const entries = [
     body:
     `
     <article>
-    Blog post excerpt:
+    Excerpt:
     <blockquote>
-    We are excited to announce that we have implemented "Trusted Publishing" support on crates.io, as described in <a href="https://rust-lang.github.io/rfcs/3691-trusted-publishing-cratesio.html" target="_blank">RFC #3691</a>. This feature was inspired by the PyPI team's excellent work in this area, and we want to thank them for the inspiration!
+    &quot;We are excited to announce that we have implemented "Trusted Publishing" support on crates.io, as described in <a href="https://rust-lang.github.io/rfcs/3691-trusted-publishing-cratesio.html" target="_blank">RFC #3691</a>. This feature was inspired by the PyPI team's excellent work in this area, and we want to thank them for the inspiration!
     <p></p>
-    Trusted Publishing eliminates the need for GitHub Actions secrets when publishing crates from your CI/CD pipeline. Instead of managing API tokens, you can now configure which GitHub repository you trust directly on crates.io. That repository is then allowed to request a short-lived API token for publishing in a secure way using OpenID Connect (OIDC). While Trusted Publishing is currently limited to GitHub Actions, we have built it in a way that allows other CI/CD providers like GitLab CI to be supported in the future.
+    Trusted Publishing eliminates the need for GitHub Actions secrets when publishing crates from your CI/CD pipeline. Instead of managing API tokens, you can now configure which GitHub repository you trust directly on crates.io. That repository is then allowed to request a short-lived API token for publishing in a secure way using OpenID Connect (OIDC). While Trusted Publishing is currently limited to GitHub Actions, we have built it in a way that allows other CI/CD providers like GitLab CI to be supported in the future.&quot;
     </blockquote>
     </article>
     `,
@@ -187,15 +182,15 @@ const entries = [
     body:
     `
     <article>
-    Blog post excerpt:
+    Excerpt:
     <blockquote>
-    With trusted publishing, you can now:
+    &quot;With trusted publishing, you can now:
     <p></p>
     <ul>
     <li><b>Publish packages without npm tokens</b>: Configure your packages to accept publishes from specific GitHub Actions or GitLab CI/CD workflows using OIDC authentication.</li>
     <li><b>Eliminate token security risks</b>: No more storing, rotating, or accidentally exposing npm tokens in your CI/CD environments.</li>
     <li><b>Establish cryptographic trust</b>: Each publish is authenticated using short-lived, workflow-specific credentials that cannot be exfiltrated or reused.</li>
-    <li><b>Get automatic provenance</b>: When using trusted publishing, npm CLI publishes provenance attestations by default. The <code>--provenance</code> flag is no longer needed.</li>
+    <li><b>Get automatic provenance</b>: When using trusted publishing, npm CLI publishes provenance attestations by default. The <code>--provenance</code> flag is no longer needed.&quot;</li>
     </ul>
     </blockquote>
     </article>
@@ -221,11 +216,11 @@ const entries = [
     body:
     `
     <article>
-    Blog post excerpt:
+    Excerpt:
     <blockquote>
-    Trusted Publishing is a better way to publish NuGet packages. You don’t need to manage long-lived API keys anymore. Instead, you use short-lived credentials issued by your CI/CD system, like GitHub Actions.
+    &quot;Trusted Publishing is a better way to publish NuGet packages. You don’t need to manage long-lived API keys anymore. Instead, you use short-lived credentials issued by your CI/CD system, like GitHub Actions.
     <p></p>
-    This makes your publishing process safer by reducing the risk of leaked credentials. It also makes automation easier because you don’t need to rotate or store secrets. This approach is part of a broader industry shift toward secure, keyless publishing. If you're curious, check out the <a href="https://repos.openssf.org/trusted-publishers-for-all-package-repositories" target="_blank">OpenSSF initiative</a>.
+    This makes your publishing process safer by reducing the risk of leaked credentials. It also makes automation easier because you don’t need to rotate or store secrets. This approach is part of a broader industry shift toward secure, keyless publishing. If you're curious, check out the <a href="https://repos.openssf.org/trusted-publishers-for-all-package-repositories" target="_blank">OpenSSF initiative</a>.&quot;
     </blockquote>
     </article>
     `,
@@ -240,7 +235,7 @@ const entries = [
 
 // Page details
 const pageTitle = 'Are we Trusted Publishing yet?';
-const pageDescription = 'A timeline that lists package registries that support Trusted Publishing and when it was added. ';
+const pageDescription = 'A timeline that lists package registries that support Trusted Publishing and when it was added.';
 const pageAuthor = 'Jordan Duabe';
 const showMirrorLinks = false;
 
