@@ -7,7 +7,7 @@ const entries = [
     color: 'green',
     faicon: 'plus',
     date: '2023-01-19',
-    title: 'Automated publishing of package to pub.dev',
+    title: 'Automated publishing of packages to pub.dev',
     body: `
     <br/>
     <p>
@@ -179,6 +179,29 @@ const entries = [
       {
         href: 'https://docs.npmjs.com/trusted-publishers',
         linkText: 'npm Docs: Trusted publishing for npm packages',
+      },
+    ],
+  },
+  {
+    id: 'private-packagist',
+    categories: ['Private Packagist'],
+    color: 'green',
+    faicon: 'plus',
+    date: '2025-09-09',
+    title: 'Private Packagist adds support for Trusted Publishing',
+    body:
+      `
+    <br/>
+    <p>
+      Private Packagist adds support for Trusted Publishing for packages published through GitHub Actions.
+    </p>
+    <br/>
+    <span><i>Source:</i></span>
+    `,
+    links: [
+      {
+        href: 'https://packagist.com/docs/api/trusted-publishing',
+        linkText: 'Private Packagist docs: Trusted Publishing for artifact packages',
       },
     ],
   },

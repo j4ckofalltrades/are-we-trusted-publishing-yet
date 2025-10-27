@@ -1,6 +1,5 @@
 # Are we Trusted Publishing yet?
 
-
 ![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)
 
 [Trusted publishing](https://repos.openssf.org/trusted-publishers-for-all-package-repositories) is a recommended security capability by the OpenSSF Securing Software Repositories Working Group
@@ -14,6 +13,7 @@ As of this writing, the following package registries support Trusted Publishing:
 - [JSR](https://jsr.io)
 - [crates.io](https://crates.io)
 - [npm](https://npmjs.com)
+- [Private Packagist](https://packagist.com)
 - [NuGet](https://nuget.org)
 
 ## Contributing
