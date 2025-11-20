@@ -223,6 +223,31 @@ const entries = [
       },
     ],
   },
+  {
+    id: 'pypi',
+    categories: ['PyPI'],
+    color: 'green',
+    faicon: 'plus',
+    date: '2025-11-10',
+    title:
+      'PyPI expands Trusted Publisher Support to GitLab Self-Managed and enables Pending Trusted Publishers for Organizations',
+    body: `
+    <br/>
+    <p>
+      Support for GitLab Self-Managed instances is now in beta, and it is now possible to pending Trusted Publisher at the
+      Organization level which was previously only possible at the user level.
+    </p>
+    <br/>
+    <span><i>Source:</i></span>
+    `,
+    links: [
+      {
+        href: 'https://blog.pypi.org/posts/2025-11-10-trusted-publishers-coming-to-orgs/',
+        linkText:
+          'PyPI Blog: Trusted Publishing is popular, now for GitLab Self-Managed and Organizations',
+      },
+    ],
+  },
 ];
 
 // Page details
