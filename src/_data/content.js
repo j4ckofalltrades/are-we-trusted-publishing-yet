@@ -248,6 +248,28 @@ const entries = [
       },
     ],
   },
+  {
+    id: 'crates.io',
+    categories: ['crates.io'],
+    color: 'green',
+    faicon: 'plus',
+    date: '2025-11-19',
+    title: 'crates.io adds support for Trusted Publishing with GitLab CI/CD',
+    body: `
+    <br/>
+    <p>
+      crates.io now supports GitLab CI/CD in addition to GitHub Actions.
+    </p>
+    <br/>
+    <span><i>Source:</i></span>
+    `,
+    links: [
+      {
+        href: 'https://crates.io/docs/trusted-publishing',
+        linkText: 'Rust Blog: crates.io: Trusted Publishing',
+      },
+    ],
+  },
 ];
 
 // Page details
