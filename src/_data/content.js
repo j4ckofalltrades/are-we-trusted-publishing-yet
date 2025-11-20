@@ -45,7 +45,7 @@ const entries = [
     links: [
       {
         href: 'https://blog.pypi.org/posts/2023-04-20-introducing-trusted-publishers/',
-        linkText: 'PyPI Blog: Introducing \'Trusted Publishers\'',
+        linkText: "PyPI Blog: Introducing 'Trusted Publishers'",
       },
       {
         href: 'https://docs.pypi.org/trusted-publishers/using-a-publisher/',
@@ -75,8 +75,8 @@ const entries = [
       },
       {
         href: 'https://guides.rubygems.org/trusted-publishing/',
-        linkText: 'RubyGems Guides: Trusted Publishing'
-      }
+        linkText: 'RubyGems Guides: Trusted Publishing',
+      },
     ],
   },
   {
@@ -86,8 +86,7 @@ const entries = [
     faicon: 'plus',
     date: '2024-03-01',
     title: 'JSR (the JavaScript Registry) adds support for Trusted Publishing',
-    body:
-    `
+    body: `
     <br/>
     <p>
       JSR adds support for Trusted Publishing for packages published through GitHub Actions.
@@ -135,8 +134,7 @@ const entries = [
     faicon: 'plus',
     date: '2025-07-11',
     title: 'crates.io adds support for Trusted Publishing',
-    body:
-    `
+    body: `
     <br/>
     <p>
       crates.io adds support for Trusted Publishing for packages published through GitHub Actions.
@@ -152,7 +150,7 @@ const entries = [
       {
         href: 'https://crates.io/docs/trusted-publishing',
         linkText: 'Rust Package Registry Docs: Trusted Publishing',
-      }
+      },
     ],
   },
   {
@@ -162,8 +160,7 @@ const entries = [
     faicon: 'plus',
     date: '2025-07-31',
     title: 'npm adds support for Trusted Publishing',
-    body:
-    `
+    body: `
     <br/>
     <p>
       npm adds support for Trusted Publishing for packages published through GitHub Actions and GitLab CI/CD.
@@ -189,8 +186,7 @@ const entries = [
     faicon: 'plus',
     date: '2025-09-09',
     title: 'Private Packagist adds support for Trusted Publishing',
-    body:
-      `
+    body: `
     <br/>
     <p>
       Private Packagist adds support for Trusted Publishing for packages published through GitHub Actions.
@@ -212,8 +208,7 @@ const entries = [
     faicon: 'plus',
     date: '2025-09-17',
     title: 'NuGet adds support for Trusted Publishing',
-    body:
-    `
+    body: `
     <br/>
     <p>
       nuget.org adds support for Trusted Publishing for packages published through GitHub Actions and GitLab CI/CD.
@@ -232,7 +227,8 @@ const entries = [
 
 // Page details
 const pageTitle = 'Are we Trusted Publishing yet?';
-const pageDescription = 'A timeline that lists package registries that support Trusted Publishing and when it was added.';
+const pageDescription =
+  'A timeline that lists package registries that support Trusted Publishing and when it was added.';
 const pageAuthor = 'Jordan Duabe';
 const showMirrorLinks = false;
 
