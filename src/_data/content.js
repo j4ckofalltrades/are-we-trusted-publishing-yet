@@ -253,20 +253,23 @@ const entries = [
     categories: ['crates.io'],
     color: 'green',
     faicon: 'plus',
-    date: '2025-11-19',
-    title: 'crates.io adds support for Trusted Publishing with GitLab CI/CD',
+    date: '2026-01-21',
+    title: 'crates.io Trusted Publishing enhancements',
     body: `
     <br/>
     <p>
-      crates.io now supports GitLab CI/CD in addition to GitHub Actions.
+      crates.io adds GitLab CI/CD (Public Beta) support (currently only works for GitLab.com, self-hosted instances not yet supported), introduces a
+      Trusted Publishing only mode for crates, and
+      now blocks risky GitHub Actions triggers such as <code>pull_request_target</code> and
+      <code>workflow_run</code>.
     </p>
     <br/>
     <span><i>Source:</i></span>
     `,
     links: [
       {
-        href: 'https://crates.io/docs/trusted-publishing',
-        linkText: 'Rust Blog: crates.io: Trusted Publishing',
+        href: 'https://blog.rust-lang.org/2026/01/21/crates-io-development-update/#trusted-publishing-enhancements',
+        linkText: 'Rust Blog: crates.io development update - Trusted Publishing Enhancements',
       },
     ],
   },
